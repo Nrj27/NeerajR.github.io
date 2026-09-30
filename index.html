@@ -464,8 +464,9 @@
                     <p>Loading projects from GitHub...</p>
                 </div>
             </div>
-            <div id="fallbackProjects" class="hidden space-y-8">
-                <!-- <div class="timeline-item glass-card p-6 rounded-lg">
+            //<div id="fallbackProjects" class="hidden space-y-8">
+                <div id="fallbackProjects" class="space-y-8 mt-8">
+                    <!-- <div class="timeline-item glass-card p-6 rounded-lg">
                     <div class="flex justify-between items-start mb-3">
                         <h3 class="text-lg font-semibold">Reactive Order Engine</h3>
                         <span class="text-sm mono text-emerald-400">2024</span>
@@ -481,41 +482,42 @@
                             class="mono text-xs bg-slate-800 px-3 py-1 rounded border border-emerald-500/30">Kafka</span>
                     </div>
                 </div> -->
-                <div class="timeline-item glass-card p-6 rounded-lg">
-                    <div class="flex justify-between items-start mb-3">
-                        <h3 class="text-lg font-semibold">Social Summer of Code (SSOC'23)</h3>
-                        <span class="text-sm mono text-emerald-400">2023</span>
+                    <div class="timeline-item glass-card p-6 rounded-lg">
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="text-lg font-semibold">Social Summer of Code (SSOC'23)</h3>
+                            <span class="text-sm mono text-emerald-400">2023</span>
+                        </div>
+                        <p class="text-gray-400 mb-3">Open Source Contributor & Certificate of Achievement recipient.
+                            Collaborated on distributed version control and peer code reviews.</p>
+                        <div class="flex flex-wrap gap-2"><span
+                                class="mono text-xs bg-slate-800 px-3 py-1 rounded border border-emerald-500/30">Open
+                                Source</span></div>
                     </div>
-                    <p class="text-gray-400 mb-3">Open Source Contributor & Certificate of Achievement recipient.
-                        Collaborated on distributed version control and peer code reviews.</p>
-                    <div class="flex flex-wrap gap-2"><span
-                            class="mono text-xs bg-slate-800 px-3 py-1 rounded border border-emerald-500/30">Open
-                            Source</span></div>
-                </div>
-                <div class="timeline-item glass-card p-6 rounded-lg">
-                    <div class="flex justify-between items-start mb-3">
-                        <h3 class="text-lg font-semibold">Hacktoberfest</h3>
-                        <span class="text-sm mono text-emerald-400">2023</span>
+                    <div class="timeline-item glass-card p-6 rounded-lg">
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="text-lg font-semibold">Hacktoberfest</h3>
+                            <span class="text-sm mono text-emerald-400">2023</span>
+                        </div>
+                        <p class="text-gray-400 mb-3">Successfully completed open-source contributions. Applied Git
+                            workflows and collaborative development practices.</p>
+                        <div class="flex flex-wrap gap-2"><span
+                                class="mono text-xs bg-slate-800 px-3 py-1 rounded border border-emerald-500/30">Community</span>
+                        </div>
                     </div>
-                    <p class="text-gray-400 mb-3">Successfully completed open-source contributions. Applied Git
-                        workflows and collaborative development practices.</p>
-                    <div class="flex flex-wrap gap-2"><span
-                            class="mono text-xs bg-slate-800 px-3 py-1 rounded border border-emerald-500/30">Community</span>
+                    <div class="timeline-item glass-card p-6 rounded-lg">
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="text-lg font-semibold">Data Science Internship</h3>
+                            <span class="text-sm mono text-emerald-400">2022</span>
+                        </div>
+                        <p class="text-gray-400 mb-3">Professional internship focused on data structures, algorithms,
+                            and
+                            logical pipelines. Built the foundation for backend system reasoning.</p>
+                        <div class="flex flex-wrap gap-2"><span
+                                class="mono text-xs bg-slate-800 px-3 py-1 rounded border border-emerald-500/30">Data
+                                Structures</span></div>
                     </div>
-                </div>
-                <div class="timeline-item glass-card p-6 rounded-lg">
-                    <div class="flex justify-between items-start mb-3">
-                        <h3 class="text-lg font-semibold">Data Science Internship</h3>
-                        <span class="text-sm mono text-emerald-400">2022</span>
-                    </div>
-                    <p class="text-gray-400 mb-3">Professional internship focused on data structures, algorithms, and
-                        logical pipelines. Built the foundation for backend system reasoning.</p>
-                    <div class="flex flex-wrap gap-2"><span
-                            class="mono text-xs bg-slate-800 px-3 py-1 rounded border border-emerald-500/30">Data
-                            Structures</span></div>
                 </div>
             </div>
-        </div>
     </section>
 
     <section id="contact" class="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-slate-900/50 to-transparent">
@@ -556,7 +558,7 @@
                 </div>
                 <div class="glass-card p-8 rounded-lg">
                     <h3 class="text-xl font-semibold mb-6 emerald-accent">Send Me a Message</h3>
-                    <form action="https://formsubmit.co/neerajrikhari2002@gmail.com" method="POST" class="space-y-4">
+                    <!-- <form action="https://formsubmit.co/neerajrikhari2002@gmail.com" method="POST" class="space-y-4">
                         <input type="text" name="name" placeholder="Your Full Name" required
                             class="w-full px-4 py-3 rounded-lg transition">
                         <input type="email" name="email" placeholder="Your Email" required
@@ -567,6 +569,20 @@
                             Message</button>
                         <input type="hidden" name="_captcha" value="false">
                         <input type="hidden" name="_next" value="https://nrj27.github.io">
+                    </form> -->
+                    <form id="contactForm" class="space-y-4">
+                        <input type="text" name="name" placeholder="Your Full Name" required
+                            class="w-full px-4 py-3 rounded-lg transition">
+                        <input type="email" name="email" placeholder="Your Email" required
+                            class="w-full px-4 py-3 rounded-lg transition">
+                        <textarea name="message" placeholder="Your Message" rows="5" required
+                            class="w-full px-4 py-3 rounded-lg transition resize-none"></textarea>
+                        <button type="submit" class="w-full px-6 py-3 btn-primary rounded-lg font-semibold">
+                            Open in Email App
+                        </button>
+                        <p class="text-xs text-gray-500 text-center">
+                            This opens your email app with the message ready to send.
+                        </p>
                     </form>
                 </div>
             </div>
@@ -656,7 +672,7 @@
                 }
             }
         }
-        
+
         let rafId;
         function draw() {
             ctx.fillStyle = 'rgba(15, 23, 42, 0.8)'; ctx.fillRect(0, 0, canvas.width, canvas.height);
@@ -692,8 +708,9 @@
             // if (!game.gameOver && !game.gameWon) requestAnimationFrame(draw);
             if (!game.gameOver && !game.gameWon) rafId = requestAnimationFrame(draw);
         }
-        cancelAnimationFrame(rafId);
+
         function resetGame() {
+            cancelAnimationFrame(rafId);
             game = {
                 score: 0, lives: 3, level: 1, ballRadius: 5, paddleHeight: 12, paddleWidth: 80, paddleX: (canvas.width - 80) / 2,
                 ballX: canvas.width / 2, ballY: canvas.height - 30, ballDX: 3, ballDY: -3,
@@ -743,6 +760,14 @@
             }
         }
         document.addEventListener('DOMContentLoaded', fetchGitHubProjects);
+        document.getElementById('contactForm').addEventListener('submit', e => {
+            e.preventDefault();
+            const d = Object.fromEntries(new FormData(e.target));
+            const to = ['neerajrikhari2002', 'gmail.com'].join('@');
+            const subject = encodeURIComponent('Portfolio message from ' + d.name);
+            const body = encodeURIComponent(d.message + '\n\n— ' + d.name + ' (' + d.email + ')');
+            window.location.href = `mailto:${to}?subject=${subject}&body=${body}`;
+        });
     </script>
 </body>
 
